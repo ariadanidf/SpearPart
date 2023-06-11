@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string('alamat_penerima');
             $table->date('order_date');
             $table->string('jenis_pengiriman');
-            $table->string('berat_barang');
+            $table->float('berat_barang');
             $table->string('status'); //dari bagas
-            $table->string('harga_barang');
-            $table->string('harga_ongkir'); //dari bagas
-            $table->integer('total_harga');
+            $table->float('harga_barang');
+            $table->float('harga_ongkir'); //dari bagas
+            $table->float('total_harga');
             $table->integer('no_resi'); //dari bagas
             $table->timestamps();
         });
